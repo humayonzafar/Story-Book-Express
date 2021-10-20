@@ -1,3 +1,12 @@
-.idea
+
 node_modules
-./config/config.env
+/config/config.env
+config/config.env
+# local env files
+.env.local
+.env
+.env.*.local
+
+.DS_Store
+/dist
+.idea
