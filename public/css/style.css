@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --background-color: red;
+}
+
+body {
+    margin: 0;
+    font-family: 'sans-serif';
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h2, h3 {
+    line-height: 0.8;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    margin: 0.85em;
+}
+
+/* login */
+.login-container{
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
