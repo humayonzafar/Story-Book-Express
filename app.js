@@ -1,4 +1,5 @@
 const express = require('express');
+const mongoose = require('mongoose');
 const path = require('path');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
@@ -6,6 +7,7 @@ const connectDB = require('./config/db');
 const exphbs = require('express-handlebars');
 const passport = require('passport');
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 //load config
 dotenv.config({path: './config/config.env'});
 
@@ -31,6 +33,9 @@ app.use(session({
     secret: 'humayon story',
     resave: false,
     saveUninitialized: false,
+    store: new MongoStore({
+        mongooseConnection: mongoose.connection
+    })
 }));
 
 //passport middleware
