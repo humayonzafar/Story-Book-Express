@@ -1,5 +1,5 @@
 *, *::before, *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 :root {
@@ -20,16 +20,33 @@ img {
     margin-bottom: 0;
 }
 
+p {
+    margin: 10px 0 !important;
+}
+
+.btn-float {
+    float: left;
+    margin-right: 10px;
+}
+
+.img-small {
+    width: 180px;
+}
+
+.mar-auto{
+   margin: 0 auto;
+}
+
 /* Typography */
 
-
-p {
-    margin: 0.85em;
+.fa-small {
+    font-size: 16px !important;
 }
 
 /* login */
-.login-container{
+.login-container {
     width: 400px;
     margin-top: 50px;
     text-align: center;
 }
+
