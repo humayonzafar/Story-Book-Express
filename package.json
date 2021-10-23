@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/humayonzafar/Story-Book-Express#readme",
   "dependencies": {
+    "node": "14.x",
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
